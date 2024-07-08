@@ -147,6 +147,7 @@ int main()
          << "Decoded string: " << decodedString << endl;
     // The sample output in compiler looks like
     // Initially it prints the code correspnding to each charecter
+    // The input file contains the text : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
     //  ->100
     // ,->110101
     // .->101000
