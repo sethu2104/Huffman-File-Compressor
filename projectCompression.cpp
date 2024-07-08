@@ -139,10 +139,36 @@ int main()
     cout << "length of newString is " << newlen << endl;
     float compression_ratio = (float)(newlen) / (float)(8 * s.size());
     float compression_percentage = (compression_ratio) * 100;
-    cout << "the file is compressed by " << compression_percentage << endl;
+    cout << "the file is compressed by " << compression_percentage << "%" << endl;
     string enccodedContent = readFile(encodedFilename);
     string decodedString = decodeString(root, enccodedContent);
     writefile(decodedFilename, decodedString);
     cout << endl
          << "Decoded string: " << decodedString << endl;
+    // The sample output in compiler looks like
+    // Initially it prints the code correspnding to each charecter
+    //  ->100
+    // ,->110101
+    // .->101000
+    // L->101001
+    // a->01010
+    // c->10101
+    // d->1011
+    // e->000
+    // g->110100
+    // i->001
+    // l->01011
+    // m->0110
+    // n->01111
+    // o->1110
+    // p->01110
+    // r->0100
+    // s->1111
+    // t->1100
+    // u->11011
+    // encoded string:101001111001000000110100001011101111110110110100101111100101111100100100111100111001000101001100001100110101100101011110011111111000101011100000110011011010010001010101100101110001111110101001011111101001000000101100111001101011001111000101110010111110100000001110111111011011101011101000
+    // length of original string (in bits) is 576
+    // length of newString is 288
+    // the file is compressed by 50%
+    // Decoded string: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 }
