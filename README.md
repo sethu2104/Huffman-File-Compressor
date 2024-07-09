@@ -7,5 +7,5 @@ Decompression: Restores the original text from encoded binary data using the Huf
 File I/O: Reads input from a text file, writes compressed data to an encoded file, and decodes data from an encoded file back to its original format.
 Statistics: Calculates compression ratio and percentage to measure the effectiveness of compression.
 How To Use:-
-Compile the Program using a C++ compiler ,which reads input from input.txt and compress it and writes the encoded dat to encoded.txt ,the code also decodes the encoded file and outputs the decoded text to decoded.txt.
+Compile the Program using a C++ compiler ,which reads input from input.txt and compress it and writes the encoded dat to encoded.txt ,the code also decodes the encoded file and outputs the decoded text to decoded.txt. Sample files are attached as well.
 
